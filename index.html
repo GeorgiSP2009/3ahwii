@@ -1,98 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="test2.css">
-</head>
-<body>
-    <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="kurzfassung.html">Kurzgefasst</a>
-        <div class="dropdown">
-          <button class="dropbtn">Über mich 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="sbw.html">Meine Schulzeit before Wien</a>
-            <a href="snw.html">Meine Schulzeit nach Wien</a>
-            <a href="urlaube.html">Urlaube</a>
-          </div>
-        </div> 
-        <a href="mac.html">Mac hater</a>
-      </div>
-    
-</body>
-</html>
-    
-<h1 class="headline">Willkommen zur Website von Georgi Dimitrov</h1>
 
-      <!-- Slideshow container -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Georgis Website</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="test2.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="kurzfassung.html">Kurzgefasst</a>
+    <div class="dropdown">
+      <button class="dropbtn">Über mich
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="sbw.html">Meine Schulzeit before Wien</a>
+        <a href="snw.html">Meine Schulzeit nach Wien</a>
+        <a href="urlaube.html">Urlaube</a>
+      </div>
+    </div>
+    <a href="mac.html">Mac hater</a>
+  </div>
+
+</body>
+
+<div class="header">
+  <h1>GEORGI DMITROV</h1>
+  <p>WILLKOMMEN ZUR WEBSITE VON GEROGI DIMITROV</p>
+</div>
+
+<!-- <h1 class="headline">Willkommen zur Website von Georgi Dimitrov</h1> -->
+
+<!-- Slideshow container -->
 <div class="slideshow-container">
 
-    <!-- Full-width images with number and caption text -->
-    <div class="mySlides fade">
-      <div class="numbertext">1 / 3</div>
-      <img src="photots/IMG_6373.jpeg" style="width:100%">
-      <div class="text">Caption Text</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 3</div>
-      <img src="photots/IMG_1872.jpeg" style="width:100%">
-      <div class="text">Caption Two</div>
-    </div>
-  
-    <div class="mySlides fade">
-      <div class="numbertext">3 / 3</div>
-      <img src="photots/IMG_6892.jpeg" style="width:100%">
-      <div class="text">Caption Three</div>
-    </div>
-  
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  </div>
-  <br>
-  
-  <!-- The dots/circles -->
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span> 
-    <span class="dot" onclick="currentSlide(2)"></span> 
-    <span class="dot" onclick="currentSlide(3)"></span>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="photots/IMG_6373.jpeg" style="height: 750px;" class="center">
+    <div class="text">Sommer Urlaub in Griechenland</div>
   </div>
 
-<script> 
-let slideIndex = 1;
-showSlides(slideIndex);
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="photots/IMG_1872.jpeg" style="height: 750px;" class="center">
+    <!--img src="photots/IMG_1872.jpeg" style="width:100%"> -->
+    <div class="text">Osterferien in Dubai (Burj Khalifa)</div>
+  </div>
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="photots/IMG_6892.jpeg" style="width: 100%;" class="center">
+    <div class="text">Sommer in Griechenland mit Freunden</div>
+  </div>
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1} 
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none"; 
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
   }
-  slides[slideIndex-1].style.display = "block"; 
-  dots[slideIndex-1].className += " active";
-}
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+  }
 </script>
 
 
@@ -101,23 +108,29 @@ function showSlides(n) {
 <button class="button button1" style="width:80%" onclick="document.location='kurzfassung.html'">Kurzfassung</button>
 
 <h2>Diese Kategorie habe ich kreiert für die Sitoationen von Apple hater.</h2>
-<p><button class="button button1" style="width:80%" onclick="document.location='kurzfassung.html'">Die Mac hater</button></p>
+<p><button class="button button1" style="width:80%" onclick="document.location='kurzfassung.html'">Die Mac
+    hater</button></p>
 
 <h2>Hier können sie verschidene Teile von mein Leben lesen.</h2>
 <p><button class="button button1" style="width:80%" ONCLICK="ShowAndHide()">Ueber mich</button></p>
-<div id="SectionName" style="display:none">   <button class="button button1" style="width:20%" onclick="document.location='sbw.html'">Meine Schulzeit before Wien</button>
-                                           <p><button class="button button1" style="width:20%" onclick="document.location='snw.html'">Meine Schulzeit nach Wien</p></button>
-                                           <p><button class="button button1" style="width:20%" onclick="document.location='urlaube.html'">Urlaube</button></p>
+<div id="SectionName" style="display:none"> <button class="button button1" style="width:20%"
+    onclick="document.location='sbw.html'">Meine Schulzeit before Wien</button>
+  <p><button class="button button1" style="width:20%" onclick="document.location='snw.html'">Meine Schulzeit nach Wien
+  </p></button>
+  <p><button class="button button1" style="width:20%" onclick="document.location='urlaube.html'">Urlaube</button></p>
 </div>
 <SCRIPT>
   function ShowAndHide() {
-      var x = document.getElementById('SectionName');
-      if (x.style.display == 'none') {
-          x.style.display = 'block';
-      } else {
-          x.style.display = 'none';
-      }
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+      x.style.display = 'block';
+    } else {
+      x.style.display = 'none';
+    }
   }
-  </SCRIPT>
+</SCRIPT>
+
+
+<!-- <button onclick="alert('Hallo')">test</button> -->
 
 </html>
