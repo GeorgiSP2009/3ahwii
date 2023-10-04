@@ -248,6 +248,35 @@ tr:nth-child(even) {
   box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
 }
 
+.button2 {
+  background-color: lightblue; /* light Blue */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  display: block;
+  border-radius: 50px;
+}
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid lightblue;
+}
+
+.button3:hover {
+  background-color: lightblue;
+  color: white;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0), 0 0px 0px 0 rgba(0,0,0,0);
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -269,4 +298,8 @@ tr:nth-child(even) {
         text-align: center;
         box-sizing: border-box;
         font-size: 0;
+}
+
+iframe {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.4), 0 12px 40px 0 rgba(0,0,0,0.38);
 }
