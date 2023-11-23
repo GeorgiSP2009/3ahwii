@@ -1,5 +1,5 @@
 body {
-    background-image: url('photots/DALL·E\ 2023-10-04\ 18.40.15.png');
+    background-image: url('photots/backround1.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
   background-size: 100% 100%;
@@ -53,10 +53,10 @@ tr:nth-child(even) {
 
 /* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
-    border-radius: 25px;
+   overflow: hidden;
+   background-color: #333;
+   font-family: Arial;
+   border-radius: 25px;
   }
   
   /* Links inside the navbar */

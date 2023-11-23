@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="test.css">
-    <link rel="stylesheet" href="test2.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <div class="navbar">
@@ -25,8 +25,5 @@
         <a href="contact.html">Kontakt</a>
       </div>
     
-      <h1>Meine Schulzeit nach St. Gilgen in Wien</h1>
-      <p class="size">Mit 6 Jahren bin ich von St. Gilgen nach Wien umgezogen. Ich habe mein letzes Semester meiner Volkschulzeit dort verbracht. Dann habe ich mich für Gymnasium Stubenbastei angemeldet und wurde angenommen. Es war eine guze Zeit und dann habe ich herausgefunden, dass es eine Schule gibt dei meine Lieblingssache lehrt Technick und so befinde ich mich jetzt hier in der <a href="https://spengergasse.at/">HTL Spengergasse</a>.</p>
-
 </body>
 </html>

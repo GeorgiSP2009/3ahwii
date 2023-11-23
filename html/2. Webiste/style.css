@@ -1,0 +1,12 @@
+.navbar {
+    background-color: cornflowerblue;
+    color: whitesmoke;
+    padding: 5px 15px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar a.active {
+    background-color: green;
+}
