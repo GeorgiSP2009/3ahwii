@@ -21,12 +21,12 @@ class GeldLade {
     }
   }
   
-  const artikel = { name: "Cola", preis: 3 };
+  const artikel = { name: "Cola", preis: 2 };
   const geldLade = new GeldLade();
   geldLade.scannen(artikel);
   
   try {
-    const { bezahlterBetrag, rueckgeld } = geldLade.bezahlen(5);
+    const { bezahlterBetrag, rueckgeld } = geldLade.bezahlen(3);
     console.log(
       `Der bezahlte Betrag betrug ${bezahlterBetrag} € und das Rückgeld beträgt ${rueckgeld} €.`
     );
