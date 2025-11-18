@@ -2,3 +2,4 @@ node_modules
 **/bin/
 **/obj/
 /3ahwii
+.DS_Store
