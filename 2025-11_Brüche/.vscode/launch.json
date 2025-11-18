@@ -5,18 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
-      "name": ".NET Launch (console)",
-      "type": "dotnet",
-      "request": "launch",
-      "projectPath": "${workspaceFolder}/MyApp/MyApp.csproj",
-      "program": "${workspaceFolder}/MyApp/bin/Debug/net8.0/MyApp.dll",
-      "args": ["--mode", "test", "--count", "3"],
-      "cwd": "${workspaceFolder}/MyApp",
-      "env": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "console": "integratedTerminal"
+            "name": ".NET Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "program": "${workspaceFolder}/2025-11_Brüche/bin/Debug/net8.0/2025-11_brueche.dll",
+            "args": ["1 2/3", "4/7"],
+            "cwd": "${workspaceFolder}/2025-11_Brüche",
+            "console": "integratedTerminal",
+            "stopOnEntry": false
         }
-
     ]
 }
