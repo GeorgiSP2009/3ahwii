@@ -6,13 +6,13 @@
     "configurations": [
         {
             "name": ".NET Launch (console)",
-            "type": "coreclr",
+            "type": "dotnet",
             "request": "launch",
-            "program": "${workspaceFolder}/2025-11_Brüche/bin/Debug/net8.0/2025-11_brueche.dll",
-            "args": ["1 2/3", "4/7"],
-            "cwd": "${workspaceFolder}/2025-11_Brüche",
+            "projectPath": "${workspaceFolder}/3ahwii/2025-11_Brüche/2025-11_brueche.csproj",
+           /*  "args": ["1 2/3", "4/7"],
+            "cwd": "${workspaceFolder}/3ahwii/2025-11_Brüche",
             "console": "integratedTerminal",
             "stopOnEntry": false
-        }
+ */        }
     ]
 }
