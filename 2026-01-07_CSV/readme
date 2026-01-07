@@ -1,0 +1,70 @@
+Was ist CSV?
+
+CSV steht für Comma-Separated Values. Es ist ein einfaches Textformat, um tabellarische Daten zu
+speichern. Jede Zeile entspricht einem Datensatz und die einzelnen Werte in einer Zeile werden durch
+ein Trennzeichen getrennt. CSV-Dateien sind sehr verbreitet, weil sie leicht lesbar sind, wenig Speicher
+benötigen und mit fast allen Programmen und Programmiersprachen kompatibel sind (z. B. Excel,
+Google Sheets, Datenbanken, Webanwendungen usw.).
+
+
+- Separator (Trennzeichen)
+Der Separator trennt die Werte innerhalb einer Zeile voneinander. Typische Beispiele: 
+- Komma (,) -> Standard in englischsprachigen Ländern 
+- Semikolon (;) -> häufig in Europa, da das Komma oft für Dezimalzahlen genutzt wird
+
+Weitere mögliche Separatoren sind Tabulator (\t) oder Pipe (|).
+Welcher Separator verwendet wird, hängt oft vom jeweiligen CSV-Dialekt oder Land ab.
+
+
+- Delimiter
+Der Delimiter grenzt Textfelder ein. Meistens werden dafür Anführungszeichen (" ") verwendet. 
+Sie sind wichtig, wenn ein Wert selbst Sonderzeichen wie Kommas, Leerzeichen oder sogar
+Zeilenumbrüche enthält.
+
+Beispiel: "Max","Muster, Mann","18"
+
+Ohne Delimiter würde das Komma im Namen den Wert zerbrechen.
+
+
+- Quotation
+Quotation beschreibt die Verwendung von Anführungszeichen zur Markierung von Werten. Sie wird
+eingesetzt, damit Felder mit Leerzeichen, Separatoren oder Zeilenumbrüchen korrekt gelesen werden
+können. Wenn innerhalb eines Textes Anführungszeichen vorkommen, müssen diese „escaped“ werden, z. B.:
+
+"Er sagte ""Hallo"""
+
+
+- Dialekt
+Ein CSV-Dialekt beschreibt eine bestimmte Variante des CSV-Formats. Da CSV kein fest definierter
+Standard ist, können sich CSV-Dateien unterscheiden. Variieren können z. B.: 
+- Separator (Komma, Semikolon, Tab) 
+- Delimiter 
+- Encoding (UTF-8, ANSI …) 
+- Dezimalzeichen 
+- Umgang mit leeren Feldern
+
+Beispiel: Excel in Deutschland verwendet oft ein Semikolon statt Komma.
+
+
+- CSV in C# (Einlesen & Auslesen)
+
+In C# kann man CSV-Dateien auf zwei Arten verarbeiten:
+
+1. Einfach (mit Split)
+Man kann jede Zeile auslesen und anhand des Separators zerlegen.
+
+2. Mit Libraries (empfohlen)
+Zum Beispiel CsvHelper. Diese Bibliothek unterstützt Dialekte, korrektes Quoting, Delimiter, Sonderfälle
+und erleichtert das Arbeiten enorm.
+
+Damit kann man CSV-Daten zuverlässig lesen, bearbeiten und wieder speichern.
+
+
+- Encoding
+Encoding beschreibt, wie Zeichen (Buchstaben, Umlaute, Sonderzeichen) intern als Bytes gespeichert werden. 
+Bei CSV ist das wichtig, damit Umlaute (ä, ö, ü), Sonderzeichen oder andere Sprachen korrekt dargestellt werden. 
+Häufige Encodings sind:
+- UTF-8 -> heute Standard, unterstützt fast alle Sprachen
+- ANSI / Windows-1252 -> älter, kann zu Umlautproblemen führen
+Wenn Encoding falsch gewählt ist, entstehen Fehler oder seltsame Zeichen. Deshalb sollte man
+nach Möglichkeit immer UTF-8 verwenden.
