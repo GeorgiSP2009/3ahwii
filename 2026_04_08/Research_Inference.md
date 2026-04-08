@@ -42,5 +42,3 @@ Inference ist rechenintensiv und erfordert je nach Modellgröße enorm viel GPU-
 > Für Preisvergleiche lohnt sich **[openrouter.ai](https://openrouter.ai)** – dort sind viele Anbieter auf einen Blick vergleichbar.
 
 ---
-
-*Recherche erstellt für den Programmierunterricht – HTL Spengergasse, 3AHWII*
