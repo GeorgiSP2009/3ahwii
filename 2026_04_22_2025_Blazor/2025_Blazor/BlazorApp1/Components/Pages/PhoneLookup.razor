@@ -1,0 +1,82 @@
+@page "/phone-lookup"
+@rendermode InteractiveServer
+@using BlazorApp1.Models
+@using BlazorApp1.Services
+@inject NumVerifyService NumVerifyService
+
+<PageTitle>Phone Lookup</PageTitle>
+
+<h1>Phone Lookup</h1>
+
+<p>Enter a phone number and click lookup to validate it with NumVerify.</p>
+
+<div class="mb-3">
+    <label for="phoneNumber" class="form-label">Phone number</label>
+    <input id="phoneNumber"
+           class="form-control"
+           @bind="phoneNumber"
+           placeholder="e.g. 4367762955783" />
+</div>
+
+<button class="btn btn-primary" @onclick="LookupAsync" disabled="@isLoading">Lookup</button>
+
+@if (!string.IsNullOrWhiteSpace(errorMessage))
+{
+    <div class="alert alert-danger mt-3">@errorMessage</div>
+}
+
+@if (result is not null)
+{
+    <table class="table table-striped mt-3">
+        <tbody>
+            <tr><th>Valid</th><td>@result.Valid</td></tr>
+            <tr><th>Number</th><td>@result.Number</td></tr>
+            <tr><th>Local format</th><td>@result.LocalFormat</td></tr>
+            <tr><th>International format</th><td>@result.InternationalFormat</td></tr>
+            <tr><th>Country prefix</th><td>@result.CountryPrefix</td></tr>
+            <tr><th>Country code</th><td>@result.CountryCode</td></tr>
+            <tr><th>Country name</th><td>@result.CountryName</td></tr>
+            <tr><th>Location</th><td>@result.Location</td></tr>
+            <tr><th>Carrier</th><td>@result.Carrier</td></tr>
+            <tr><th>Line type</th><td>@result.LineType</td></tr>
+        </tbody>
+    </table>
+}
+
+@code {
+    private string phoneNumber = string.Empty;
+    private NumVerifyResult? result;
+    private string? errorMessage;
+    private bool isLoading;
+
+    private async Task LookupAsync()
+    {
+        result = null;
+        errorMessage = null;
+
+        if (string.IsNullOrWhiteSpace(phoneNumber))
+        {
+            errorMessage = "Please enter a phone number.";
+            return;
+        }
+
+        try
+        {
+            isLoading = true;
+            result = await NumVerifyService.ValidateAsync(phoneNumber);
+
+            if (result is null)
+            {
+                errorMessage = "No data returned from NumVerify.";
+            }
+        }
+        catch (Exception ex)
+        {
+            errorMessage = ex.Message;
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+}
