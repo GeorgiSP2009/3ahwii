@@ -5,18 +5,44 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorApp1", "BlazorApp1\BlazorApp1.csproj", "{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhoneLookupConsoleEf", "PhoneLookupConsoleEf\PhoneLookupConsoleEf.csproj", "{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|x64.Build.0 = Debug|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Debug|x86.Build.0 = Debug|Any CPU
 		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|x64.ActiveCfg = Release|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|x64.Build.0 = Release|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|x86.ActiveCfg = Release|Any CPU
+		{2E8E843E-E7A6-4680-88D3-7AEFFDB742D7}.Release|x86.Build.0 = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|x64.Build.0 = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Debug|x86.Build.0 = Debug|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|x64.ActiveCfg = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|x64.Build.0 = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|x86.ActiveCfg = Release|Any CPU
+		{31B36AB0-2F36-43A9-AC60-5A80E3D9A7CE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
